@@ -1,0 +1,369 @@
+$medium-screen: 700px;
+$large-screen: 1000px;
+
+@mixin media-query($screen-size) {
+    @media only screen and (min-width: $screen-size) {
+        @content;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.75;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    background-color: #2e323f;
+    color: white;
+    position: absolute;
+    width: 100%;
+    padding: 0.75em;
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    text-align: left;
+    background-color: #2e323f;
+    width: 100%;
+    transform: scale(1, 0);
+    transition: 300ms ease-in-out;
+    transform-origin: top;
+
+    &__list {
+        text-align: center;
+
+        @include media-query($large-screen) {
+            display: flex;
+            height: auto;
+            align-items: center;
+        }
+
+        &--primary {
+            @include media-query($large-screen) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__item {
+        margin-bottom: 1em;
+
+        &--signup {
+            background-color: #A59678;
+            padding: 0.5em 1em;
+            border-radius: 500px;
+        }
+    }
+
+    &__item + &__item {
+        @include media-query($large-screen) {
+            margin-left: 2em;
+        }
+    }
+
+    a {
+        opacity: 0;
+        transition: opacity 100ms ease-in-out;
+
+        @include media-query($large-screen) {
+            opacity: 1;
+        }
+    }
+
+    @include media-query($large-screen) {
+        all: unset;
+        width: 100%;
+        display: flex;
+    }
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__burger,
+    &__burger::before,
+    &__burger::after {
+        display: block;
+        background-color: #ffffff;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    &__burger::before,
+    &__burger::after {
+        content: "";
+        position: absolute;
+    }
+
+    &__burger::before {
+        bottom: 7px;
+    }
+
+    &__burger::after {
+        top: 7px;
+    }
+
+    @include media-query($large-screen) {
+        all: unset;
+        display: none;
+    }
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+
+    a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+}
+
+
+
+
+.hero {
+    background-color: #3b4050;
+    color: #ffffff;
+    padding: 5em 0;
+
+    &__header {
+        font-size: 4rem;
+        @include media-query($medium-screen) {
+            width: 30%;
+        }
+
+        &--gold {
+            color: #a59678;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
+
+    &__button {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.5rem;
+        box-shadow: none;
+        border: none;
+        padding: 0.5em 1.5em;
+        border-radius: 500px;
+        text-transform: uppercase;
+        background-color: #a59678;
+        color: #ffffff;
+    }
+
+    &__content {
+        @include media-query($medium-screen) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 4em;
+            width: 50%;
+        }
+    }
+}
+
+.summary {
+    padding: 1em 0;
+    background-color: beige;
+
+    &__header {
+        color: #131929;
+        font-size: 1.875rem;
+    }
+
+    &__text {
+        font-size: 1.125rem;
+    }
+
+    &__content {
+        @include media-query($medium-screen) {
+            width: 30%;
+            text-align: center;
+        }
+    }
+}
+
+.main {
+    margin-bottom: 10em;
+
+    &__header {
+        color: #3b4050;
+        font-size: 2.25rem;
+    }
+
+    &__text {
+        font-size: 1.3125rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.main-content {
+    @include media-query($large-screen) {
+        width: 65%;
+    }
+}
+
+.side-bar {
+    @include media-query($medium-screen) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include media-query($large-screen) {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+    }
+}
+
+.side {
+    background-color: #3b4050;
+    color: #ffffff;
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__header {
+        padding-top: 1em;
+    }
+
+    &__text {
+        padding-bottom: 2.5em;
+    }
+
+    @include media-query($medium-screen) {
+        margin: 0 1em 1em 0;
+    }
+}
+
+.footer {
+    background-color: #3b4050;
+    padding: 1em;
+    color: #ffffff;
+
+    &__header {
+        font-size: 3.0rem;
+        text-transform: lowercase;
+        text-align: center;
+    }
+
+    &__sub-header {
+        color: #a59678;
+    }
+
+    &__list {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    &__item {
+        margin: 1.5em 0;
+    }
+
+    &__content {
+        @include media-query($large-screen) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.about {
+    @include media-query($large-screen) {
+        width: 35%;
+    }
+}
+
+.links {
+    width: 100%;
+
+    @include media-query($medium-screen) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include media-query($large-screen) {
+        width: 45%;
+    }
+}
+
+.col {
+    @include media-query($medium-screen) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include media-query($large-screen) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.flex {
+    @include media-query($medium-screen) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.row {
+    @include media-query($large-screen) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,85 +1,97 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   
     <title>Contacto</title>
+</head>
+<body>
     
-  </head>
-
-  <body>
-
     <header>
-     
-      <div class="hp">
-        <h1> Murakami </h1>
-      </div>
-      
-    </header>
+        <div id="form-title2">
+            <h1>Murakami</h1>
+          </div>
+          <header>
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto " href="../index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="./register.html">Register</a></li>
+                <li class="dropdown"><a href="#"><span>+</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="./Artistas.html">Artistas</a></li>
+                    <li class="dropdown"><a href="#"><span>Contacto</span> <i class="bi bi-chevron-right">
+                    <li><a href="./groupp.html">Equipo</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+            </nav>  
+          </header>
+    <section class="contact-card">
+        <img src="../img/kisspng-call-of-cthulhu-elder-sign-cthulhu-mythos-the-lurk-hand-painted-sailing-icon-template-download-5aee1f833b7cc0.6446096215255550752437.png"  id="card-sticker">
 
-    <nav>
-      <div class="nav">
-        <a href="../index.html">Home</a>
-        <a href="./groupp.html">Grupo</a>
-        <a href="./Artistas.html">Artistas</a>
-        <a class="active" href="./contact.html">Contacto</a>
-        <a href="./register.html">Registro</a>
-      </div>
-    </nav>
-<main>
-  <div>
-    <H2>
-      CONTACTO:
-    </H2>
-  </div>
-  <div>
+        <form action="https://formspree.io/f/mjvjjlwr" method="post" class="form">
+            <p id="form-title">Contacto<span>.</span></p>
+            <input name="name" type="text" class="form-input" placeholder="Enter your name">
+            <input name="lname" type="text" class="form-input" placeholder="Enter your last name">
+            <input name="country" type="text" class="form-input" placeholder="Enter your country">
+            <input name="age" type="text" class="form-input" placeholder="Enter your age">
+            <input name="email" type="email" class="form-input" placeholder="Enter your email">
+            <textarea name="message" id="form-message" cols="30" rows="10"
+                placeholder="Type your message here..."></textarea>
+            <button type="button" id="send-btn">Enviar</button>
+        </form>
+    </section>
     
-      <label for="n">Nombre</label>
-      <input type="text" id="n" name="Nombre" placeholder="Nombre...">
-  
-      <label for="a">Apellido</label>
-      <input type="text" id="a" name="apellido" placeholder="Apellido...">
-      
-      <label for="e">Tu Edad</label>
-      <input type="text" id="e" name="edad" placeholder="Edad...">
-      
-      <label for="m">Tu Mail</label>
-      <input type="email" id="m" name="mail" placeholder="Mail...">
-      
-  
-      <label for="pais">Pais:</label>
-      <select id="pais" name="pais">
-      <option value="australia">Uruguay</option>
-      <option value="canada">Argentina</option>
-      <option value="usa">Peru</option>
-      <option value="usa">Bolivia</option>
-      </select>
+    <footer class="footer">
+        <div class="container">
+          <p class="footer__header">“No pierdas a nadie importante por culpa de miedos y orgullos estúpidos.” </p>
+          <section class="footer__content">
+            <div class="about">
+              <div>
+                <h3 class="footer__sub-header">
+                  Sobre nuestra empresa
+                </h3>
+                <p>
+                    Morbi et arcu vel arcu lobortis placerat sagittis laoreet eros. Praesent scelerisque erat lectus, ut mattis tortor dignissim ut. Praesent molestie ipsum justo.                </p>
+              </div>
+            </div>
+            <div class="links">
+              <div>
+                <h3 class="footer__sub-header">Inicio</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="../index.html">Home</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="./register.html">Register</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="footer__sub-header">Nuestro Equipo</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="./Artistas.html">Artistas</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="./groupp.html">Grupo</a>
+                  </li>
+                  
+                </ul>
+            
+          </section>
+        </div>
+      </footer>
     
-    <div class="container">
-      <button type="submit" class="registerbtn">Submit</button>
-    </div>
-      
-
-  </div> 
-</main>
-
-<footer>
-     
-  <ul>
-    
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-youtube"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
-  </ul>
-
-</footer>
-
 </body>
-
 </html>
-    

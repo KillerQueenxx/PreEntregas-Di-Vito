@@ -1,94 +1,133 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Grupo De trabajo</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <title>Grupo</title>
+</head>
+<body>
     
-  </head>
-
-  <body>
-
     <header>
-     
-      <div class="hp">
-        <h1>Murakami </h1>
-      </div>
-      
-    </header>
-
-    <nav>
-      <div class="nav">
-        <a href="../index.html">Home</a>
-        <a class="active" href="./groupp.html">Grupo</a>
-        <a href="./Artistas.html">Artistas</a>
-        <a href="./contact.html">Contacto</a>
-        <a href="./register.html">Registro</a>
-      </div>
-    </nav>
-
-    <main>
-      <article>
-        <div class="hp2">
-          <h2>
-            En Que consiste nuestro trabajo.  
-          </h2>
-        </div>
-  
-        <div class="vd">
-          <p>
-            Dictum dignissim mattis litora tortor turpis lacinia aliquet ultricies mauris suspendisse odio tellus,
-             ut augue torquent fringilla cubilia sollicitudin class fames risus tincidunt. 
-             Velit laoreet faucibus curae sapien aptent platea nec aenean netus posuere pharetra sem,
-            tempor lacinia fringilla nullam mollis a viverra nulla suspendisse convallis. 
-            Scelerisque litora luctus cras lectus risus sagittis vivamus, tempor proin imperdiet per pretium.
-          </p>
+        <div id="form-title2">
+            <h1>Murakami</h1>
+          </div>
+          <header>
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto " href="../index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="./register.html">Register</a></li>
+                <li class="dropdown"><a href="#"><span>+</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="./Artistas.html">Artistas</a></li>
+                    <li class="dropdown"><a href="./contact.html"><span>Contacto</span> <i class="bi bi-chevron-right">
+                    <li><a href="#">Equipo</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+            </nav>  
+     </header>
         
-        </div> 
-      
-        <div class="hp2">
-        <h2>
-          Nuestro Grupo
-        </h2>
-      </div>
-      
-      <div class="vd">
-        <p>
-          Dictum dignissim mattis litora tortor turpis lacinia aliquet ultricies mauris suspendisse odio tellus,
-               ut augue torquent fringilla cubilia sollicitudin class fames risus tincidunt. 
-               Velit laoreet faucibus curae sapien aptent platea nec aenean netus posuere pharetra sem,
-              tempor lacinia fringilla nullam mollis a viverra nulla suspendisse convallis. 
-              Scelerisque litora luctus cras lectus risus sagittis vivamus, tempor proin imperdiet per pretium.Dictum dignissim mattis litora tortor turpis lacinia aliquet ultricies mauris suspendisse odio tellus,
-              ut augue torquent fringilla cubilia sollicitudin class fames risus tincidunt. 
-              Velit laoreet faucibus curae sapien aptent platea nec aenean netus posuere pharetra sem,
-             tempor lacinia fringilla nullam mollis a viverra nulla suspendisse convallis. 
-             Scelerisque litora luctus cras lectus risus sagittis vivamus, tempor proin imperdiet per pretium.
-        </p>
-      </div>
-    <div class="vd">
-      <img src="../img/gettyimages-881645236-612x612.jpg" width="400" height="400">
-      <img src="../img/gettyimages-1334999950-612x612.jpg" width="400" height="400">
-    </div>
-    
-  </article>
+     <main class="content">
+            
+        <section class="hero">
+            <div class="container flex">
+               <h1 class="hero__header">
+                 Murakami
+                 <span class="hero__header--gold">Artistas sin fronteras </span>
+               </h1>
+            <div class="hero__content">
+                 <div class="main__img">
+                    <img src="../img/kisspng-the-call-of-cthulhu-t-shirt-decal-sticker-logo-cthulhu-5accb53cde8d68.0983668015233651809116.png" height="350" width="350">
+                 </div>
+                 
+                 <p class="hero__text">
+                    Ut posuere at nisi ac blandit. Suspendisse consequat vel est ut dapibus. In placerat nibh non posuere fermentum. Nullam a nulla dolor.
+                 </p>
+                </div>
+            
+            </div>
+           </section>
+           
+           <div id="form-word">
+            <h3>
+                Nuestros Equipo
+            </h3>
+           </div>
+            
+            <section class="summary">
+                <div class="container flex">
+                  <div class="summary__content">
+                    <h2 class="summary__header">Programadores</h2>
+                    <img src="../img/ninomae-ina-walfie-unscreen(1).gif"height="223" width="226" >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 
+                </div>
+                  <div class="summary__content">
+                    <h2 class="summary__header">Artistas</h2>
+                    <img src="../img/ina.gif" height="223" width="226" >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                  <div class="summary__content">
+                    <h2 class="summary__header">Diseñadores</h2>
+                    <img src="../img/hololive-vtuber-unscreen.gif" height="223" width="226">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                
+              </section>
+                
+            
     </main>
-
-     
-      <ul>
-        
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-instagram"></a>
-      </ul>
-
-  </footer>
-  
+       
+        <footer class="footer">
+            <div class="container">
+              <h1 class="footer__header">"Debemos tratar a los demás de manera que, a su muerte, no nos queden remordimientos. Con justicia y, a ser posible, honradez".  </h1>
+              <section class="footer__content">
+                <div class="about">
+                  <div>
+                    <h3 class="footer__sub-header">
+                      Sobre nuestra empresa
+                    </h3>
+                    <p>
+                        Morbi et arcu vel arcu lobortis placerat sagittis laoreet eros. Praesent scelerisque erat lectus, ut mattis tortor dignissim ut. Praesent molestie ipsum justo.                </p>
+                  </div>
+                </div>
+                <div class="links">
+                  <div>
+                    <h3 class="footer__sub-header">Inicio</h3>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="../index.html">Home</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="./register.html">Register</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="footer__sub-header">Nuestro Equipo</h3>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="./Artistas.html">Artistas</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="#">Grupo</a>
+                      </li>
+                      
+                    </ul>
+                
+              </section>
+            </div>
+        </footer>
 </body>
-
 </html>

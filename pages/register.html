@@ -4,103 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-
-    <title>Murakami Register</title>
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <title>Registro</title>
 </head>
 <body>
-  <div class="p-4 bg-primary text-black text-center">
-    <h1>Murakami</h1>
-  </div>
-  <header>
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto " href="../index.html">Home</a></li>
-        <li><a class="nav-link scrollto" href="./register.html">Register</a></li>
-        <li class="dropdown"><a href="#"><span>+</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="./Artistas.html">Artistas</a></li>
-            <li class="dropdown"><a href="./contact.html"><span>Contacto</span> <i class="bi bi-chevron-right">
-            <li><a href="./groupp.html">Equipo</a></li>
-            
-          </ul>
-        </li>
-      </ul>
-    </nav>  
-  </header>
-  
-  <section class="h-100 gradient-form" style="background-color: #eee;">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-xl-10">
-          <div class="card rounded-3 text-black">
-            <div class="row g-0">
-              <div class="col-lg-6">
-                <div class="card-body p-md-5 mx-md-4">
-  
-                  <div class="text-center">
-                    <img src="../img/gura_logo.png"
-                      style="width: 185px;" alt="logo">
-                    <h4 class="mt-1 mb-5 pb-1">Murakami</h4>
-                  </div>
-  
-                  <form>
-                    <p>Por favor, ingrese a su cuenta</p>
-  
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form2Example11" class="form-control"
-                        placeholder="Numero de telefono o email" />
-                      <label class="form-label" for="form2Example11">Username</label>
-                    </div>
-  
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form2Example22" class="form-control" />
-                      <label class="form-label" for="form2Example22">Password</label>
-                    </div>
-  
-                    <div class="text-center pt-1 mb-5 pb-1">
-                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Login</button>
-                      <a class="text-muted" href="#!">¿Has olvidado tu contraseña?</a>
-                    </div>
-  
-                    <div class="d-flex align-items-center justify-content-center pb-4">
-                      <p class="mb-0 me-2">¿No tienes una cuenta?</p>
-                      <button type="button" class="btn btn-outline-danger">Crear</button>
-                    </div>
-  
-                  </form>
-  
-                </div>
-              </div>
-              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                  <h4 class="mb-4">Esto somos Murakami</h4>
-                  <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
+    
+    <header>
+      <div id="form-title2">
+        <h1>Murakami</h1>
+      </div>
+          <header>
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto " href="../index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="#">Register</a></li>
+                <li class="dropdown"><a href="#"><span>+</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="./Artistas.html">Artistas</a></li>
+                    <li class="dropdown"><a href="./contact.html"><span>Contacto</span> <i class="bi bi-chevron-right">
+                    <li><a href="./groupp.html">Equipo</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+            </nav>  
+          </header>
+    <section class="contact-card">
+        <img src="../img/kisspng-elder-sign-the-call-of-cthulhu-cthulhu-mythos-necr-5b22d54a3b0a20.5464808315290094822419.png"  id="card-sticker">
+
+        <form action="https://formspree.io/f/mjvjjlwr" method="post" class="form">
+            <p id="form-title">Registro<span>.</span></p>
+            <input name="email" type="email" class="form-input" placeholder="Enter your email">
+            <input name="password" type="password" class="form-input" placeholder="Enter your password">
+            <input name="password" type="password" class="form-input" placeholder="Confirm your password">
+            <button type="button" id="send-btn">Registrarse</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__header">“Tiempo y la libertad son lo más importante que el dinero puede comprar para el ser humano.” </p>
+        <section class="footer__content">
+          <div class="about">
+            <div>
+              <h3 class="footer__sub-header">
+                Sobre nuestra empresa
+              </h3>
+              <p>
+                  Morbi et arcu vel arcu lobortis placerat sagittis laoreet eros. Praesent scelerisque erat lectus, ut mattis tortor dignissim ut. Praesent molestie ipsum justo.                </p>
             </div>
           </div>
-        </div>
+          <div class="links">
+            <div>
+              <h3 class="footer__sub-header">Inicio</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="../index.html">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Register</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__sub-header">Nuestro Equipo</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="./Artistas.html">Artistas</a>
+                </li>
+                <li class="footer__item">
+                  <a href="./groupp.html">Grupo</a>
+                </li>
+                
+              </ul>
+          
+        </section>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-      <ul>
-    
-        <a href="https://twitter.com/" class="fa fa-twitter"></a>
-        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-        <a href="https://ar.linkedin.com/" class="fa fa-linkedin"></a>
-        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-    </ul>
-
-  </div>
- </footer>
- </body>
+    </footer>
+</body>
 </html>

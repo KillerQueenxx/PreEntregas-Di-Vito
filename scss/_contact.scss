@@ -1,0 +1,107 @@
+$pink: #f07f8d;
+$green: #1c6c45;
+$grey: #282b28;
+$beige: #f5efdb;
+@mixin bold { font-family: 'Poppins', sans-serif; font-weight: 700; }
+@mixin med { font-family: 'Poppins', sans-serif; font-weight: 500; }
+@mixin reg { font-family: 'Poppins', sans-serif; font-weight: 400; }
+@mixin flexcol {display: flex; flex-flow: column wrap; justify-content: center;}
+@mixin flexrow {display: flex; flex-flow: row wrap; align-items: center;}
+
+* { box-sizing: border-box;}
+body {
+  background-color: beige;
+  background-color: $beige;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+// Contact Card
+  .contact-card {
+    border: 2px solid #282b28;
+    background-color: rgb(0, 0, 0);
+    background-color: $beige;
+    box-shadow: 13px 13px 0px #282b28;
+    width: 80vw;
+    @include flexcol;
+    margin: 20px auto 40px auto;
+    @media only screen and (min-width: 600px) {
+      @include flexrow;
+      max-width: 100%;
+    }
+  }
+ #card-sticker {
+    width: 50%;
+    margin: 0 auto;
+    @media only screen and (min-width: 500px) {
+      max-width: 36%;
+      margin: 10;
+    }
+  }
+  .form {
+    @include flexcol;
+    margin: 0 auto;
+  }
+  #form-title {
+    @include bold;
+    color: black;
+    color: $grey;
+    font-size: 42px;
+    padding-top: 28px;
+    @include flexrow;
+    margin: auto;
+  }
+  #form-title span {
+     color: pink;
+     color: $pink;
+  }
+  #form-sub {
+    @include reg;
+    color: black;
+    color: $grey;
+    font-size: 14px;
+    padding: 2px 0 28px 0;
+    margin: auto;
+    text-align: center;
+  }
+  .form-input, #form-message {
+    @include reg;
+    font-size: 14px;
+    color: black;
+    color: $grey;
+    text-decoration: none;
+    padding: 7px;
+    width: 70%;
+    margin: 10px auto;
+    background-color: transparent;
+    border: 2px solid #282b28;
+  }
+  #form-message {
+   max-height: 20vh;
+   margin-bottom: 20px;
+  }
+  #send-btn {
+    @include bold;
+    border: 2px solid #282b28;
+    font-size: 16px;
+    color: beige;
+    color: $beige;
+    background-color: pink;
+    background-color: $pink;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: all 0.2s ease;
+  }
+  #send-btn:hover {
+    background-color: #a59678;
+    transition: all 0.2s ease;
+  }
+
+}
